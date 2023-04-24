@@ -32,9 +32,7 @@
         font-size: 0.9rem;
     }
     .searchbox{
-        box-shadow: none;
-        width: fit-content;
-        padding:none;
+        display: none;
     }
     input{
         display: none;
