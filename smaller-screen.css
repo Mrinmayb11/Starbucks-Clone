@@ -40,6 +40,10 @@
     .fa-bars{
         display: block !important;
     }
+    .Navbar{
+        justify-content: space-between;
+        padding: 0 12vw;
+    }
 }
 @media (min-width: 320px) and (max-width:450px) {
     .menu-items img{
