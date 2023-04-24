@@ -1,0 +1,59 @@
+@media (max-width:768px) {
+    .footer-items{
+        flex-direction: column;
+        margin-left: 5em;
+    }
+    .other-product-wrapper h2{
+        font-size: 18px;
+    }
+    .other-product-wrapper p{
+        font-size: 12px;
+    }
+    .price-wrapper>button{
+        width: 96px;
+        height: 32px;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+    .item-price{
+        padding-bottom: 0;
+    }
+    .Learn-More-Section{
+        margin: 1em;
+    }
+    .background-color {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .ul-list{
+        display: none;
+    }
+    .ul-list a{
+        font-size: 0.9rem;
+    }
+    .searchbox{
+        box-shadow: none;
+        width: fit-content;
+        padding:none;
+    }
+    input{
+        display: none;
+    }
+    .fa-bars{
+        display: block !important;
+    }
+}
+@media (min-width: 320px) and (max-width:450px) {
+    .menu-items img{
+        width: 84px;
+        height: 84px;
+    }
+    .price-wrapper{
+        margin-top: 0;
+    }
+}
+@media (max-width:480px) {
+    .recommend-item{
+        width: 290px I !important;
+    }
+}

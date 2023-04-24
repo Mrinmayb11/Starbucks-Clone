@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Resources/logo ico.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="smaller-screen.css">
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script defer src="script.js"></script>
+    <title>Starbucks Coffee Company</title>
+</head>
+<body>
+    <header>
+        <nav class="Navbar flex-row">
+            <div class="flex-row">
+                <a href=""><img id="logo" src="Resources/logo (1).png" alt=""></a>
+                <ul class="ul-list flex-row">
+                    <a href="">Home</a>
+                    <a href="">Gift</a>
+                    <a href="">Order</a>
+                    <a href="">Pay</a>
+                    <a href="">Store</a>
+                </ul>
+            </div>
+
+            <ul id="Mobile_Ul" class="flex-column">
+                <a href="">Home</a>
+                <a href="">Gift</a>
+                <a href="">Order</a>
+                <a href="">Pay</a>
+                <a href="">Store</a>
+            </ul>
+            <ul class="ul-list-2 flex-row">
+                <div class="searchbox flex-row">
+                    <img src="Resources/search.svg" alt="">
+                    <input Id= "search"type="search" placeholder="looking for something specific?">
+                </div>
+                <img src="Resources/account_thin.svg" alt="">
+                <i id="Toggle" class="fa-solid fa-bars"></i>
+            </ul>
+        </nav>
+    </header>
+    <div class="Sign-Up">
+        <div class="Sign-Up-items flex-row">
+            <h2> A world of rewards awaits you! Sign up now.</h2>
+            <button>Know More</button>
+        </div>
+    </div>
+    <main>
+        <section id="menu-section">
+            <h1 class="headings">Handcrafted Curations </h1>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="Resources/Bestseller.jpg" alt="">
+                    <p>Bestseller</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Resources/Drinks.jpg" alt="">
+                    <p>Drinks</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Resources/Food.jpg" alt="">
+                    <p>Food</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Resources/Merchandise.jpg" alt="">
+                    <p>Merchandise</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Resources/CoffeeAtHome.jpg" alt="">
+                    <p>CoffeeAtHome</p>
+                </div>
+                <div class="menu-item">
+                    <img src="Resources/ReadyToEat.jpg" alt="">
+                    <p>ReadyToEat</p>
+                </div>
+            </div>
+        </section>
+        <section class= "swiper mySwiper"id="recommend-section">
+            <h1 class="headings">Barista Recommends </h1>
+            <img class= "swiper-left swiper-button-prev" src="Resources/swiperbtnleft.22de7f3e8db5d523.svg" alt="">
+            <div id="food-slider" class="Recommend-itmes swiper-wrapper" >
+                <div class="recommend-item flex-column swiper-slide">
+                    <div class="item-card flex-row">
+                        <img src="Resources/Bestseller.jpg" alt="">
+                        <div class="item-details flex-column">
+                            <img src="Resources/veg.svg" alt="">
+                            <h4>Java Chip Frappuccino </h4>
+                            <h5> TALL(354 ML) .392 kcal </h5>
+                        </div> 
+                    </div>
+                    <div class="item-price flex-row">
+                        <h3>₹ 278.25</h3>
+                        <div class="price-btn">
+                            <button>Add Item</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-item flex-column swiper-slide">
+                    <div class="item-card flex-row">
+                        <img src="Resources/105468.webp" alt="">
+                        <div class="item-details flex-column">
+                            <img src="Resources/veg.svg" alt="">
+                            <h4>Coffee Cold</h4>
+                            <h5> TALL(354 ML) .354 kcal </h5>
+                        </div>
+                    </div>
+                    <div class="item-price flex-row">
+                        <h3>₹ 351.75</h3>
+                        <div class="price-btn">
+                            <button>Add Item</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-item flex-column swiper-slide">
+                    <div class="item-card flex-row">
+                        <img src="Resources/105000.webp" alt="">
+                        <div class="item-details flex-column">
+                            <img src="Resources/veg.svg" alt="">
+                            <h4>Vanilla Sweet Cream Cold Brew</h4>
+                            <h5> TALL(354 ML) .64 kcal </h5>
+                        </div>
+                    </div>
+                    <div class="item-price flex-row">
+                        <h3>₹ 383.25</h3>
+                        <div class="price-btn">
+                            <button>Add Item</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-item flex-column swiper-slide">
+                    <div class="item-card flex-row">
+                        <img src="Resources/100447.webp" alt="">
+                        <div class="item-details flex-column">
+                            <img src="Resources/veg.svg" alt="">
+                            <h4>Signature Hot Chocolate</h4>
+                            <h5> SHORT(237 ML) .284 kcal </h5>
+                        </div>
+                    </div>
+                    <div class="item-price flex-row">
+                        <h3>₹ 278.25</h3>
+                        <div class="price-btn">
+                            <button>Add Item</button>
+                        </div>
+                    </div>                 
+                </div>
+                <div class="recommend-item flex-column swiper-slide">
+                    <div class="item-card flex-row">
+                        <img src="Resources/100377.webp" alt="">
+                        <div class="item-details flex-column">
+                            <img src="Resources/veg.svg" alt="">
+                            <h4>Coffee Latte</h4>
+                            <h5> SHORT(237 ML) .104 kcal </h5>
+                        </div>
+                    </div>
+                    <div class="item-price flex-row">
+                        <h3>₹ 273.00</h3>
+                        <div class="price-btn">
+                            <button>Add Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class= "swiper-right swiper-button-next" src="Resources/swiperbtnright.cbc1d309941ecd98.svg" alt="">
+            <a href="" class="other">View Menu</a>
+        </section>
+        <section id="Other-Product-Section">
+            <div class="background-color flex-row">
+                <div class="background-color-details flex-row">
+                    <img src="Resources/Tribute_Blend_035288e3ca.png" alt="">
+                    <div class="other-product-wrapper">
+                        <p>Presenting</p>
+                        <h2>Tribute Blend Wholebean </h2>
+                        <p class="p2"> Medium roast blend of coffee from four regions. Enjoy the notes of black berry and baking spices with every sip. </p>
+                        <div class="price-wrapper flex-row">
+                            <div>
+                                <p class="p1">For</p>
+                                <h4>₹ 1400</h4>
+                            </div>
+                            <button>Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </section>
+        <section id="Learn-More-Section">
+            <div class="Learn-More-Section">
+                <h1 class="headings">Learn more about the world of coffee! </h1>
+                <div class="background-img">
+                    <div class="black-blanket"></div>
+                    <div class="frontground-details">
+                        <h1>Starbucks’ Commitment To Sustainability</h1>
+                        <p> With sustainable practices and high-quality standards, Starbucks is committed to good coffee and the good of the earth.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer id="Footer-Section">
+        <section class="footer-items flex-row">
+            <img src="Resources/logo (1).png" alt="">
+            <ul>
+                <li class="li-heading">About Us</li>
+                <li>Our Heritage </li>
+                <li>Our Company </li>
+                <li>Coffeehouse </li>
+            </ul>
+            <ul>
+                <li class="li-heading">Responsibility</li>
+                <li>Community </li>
+                <li>Ethical Sourcing </li>
+                <li>Environment </li>
+                <li>Diversity </li>
+            </ul>
+            <ul>
+                <li class="li-heading">Quick Links</li>
+                <li>Delivery </li>
+                <li>Season's Gifting</li>
+                <li>Careers</li>
+                <li>Customer Service</li>
+                <li>FAQs</li>
+            </ul>
+            <ul>
+                <div class="flex-row">
+                    <div>
+                        <li class="li-heading">SOCIAL MEDIA</li>
+                        <img src="Resources/instagram (1).svg" alt="">
+                        <img src="Resources/facebook.svg" alt="">
+                        <img src="Resources/twitter.svg" alt="">
+                    </div>
+                    <img id="App_Store" src="Resources/appstoreAndroid.png" alt="">
+                </div>
+            </ul>
+        </section>
+        <hr>
+        <ul class="last-row flex-row">
+            <div class="last-flex flex-row"> 
+                <li>Web Accessiblity</li>
+                <li>Privacy Statement</li>
+                <li>Terms of Use</li>
+                <li>Contact Us</li>
+            </div>
+            <p>© 2023 Starbucks Coffee Company. All rights reserved.</p>
+        </ul>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+</body>
+</html>

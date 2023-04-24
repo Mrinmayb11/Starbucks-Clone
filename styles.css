@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+a,button{
+    cursor: pointer;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headings{
+    font-weight: 900;
+    color: #1e3932;
+}
+/*---------------------------------------- navbar ---------------------------------------------*/
+
+/* ----------Mobile_NavBar---------- */
+#Mobile_Ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: hsla(164, 31%, 17%, 0.829);
+    width: 0;
+    gap: 1em;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+    height: 100vh;
+}
+.add{
+    width: 100% !important;
+}
+#Mobile_Ul a{
+    color: white;
+}
+.change-color{
+    color: white !important;
+}
+.Navbar{
+    display: sticky;
+    height: 70px;
+    gap: 16vw;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.226);
+}
+/* ----------Left_NavBar---------- */
+.ul-list{
+    list-style-type: none;
+    gap: 4vw;
+}
+#logo{
+    width: 80px;
+    padding-right: 2em;
+}
+.ul-list a{
+    color:#212529;
+}
+/* ----------Right_NavBar---------- */
+
+.ul-list-2{
+    gap: 5vw;
+}
+#search{
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    width: 100%;
+}
+#search::placeholder{
+    font-size: 11px;
+}
+.searchbox{
+    box-shadow: 0 0 3px rgba(128, 128, 128, 0.452);
+    border-radius: 20px;
+    padding: 0.4em 1.8em;
+    gap: 5px;
+    width: 17vw;
+}
+.Sign-Up{
+    background-color: #1e3932;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Sign-Up-items{
+    width: 80%;
+}
+.Sign-Up h2{
+    color: white;
+    font-size: 1em;
+    font-weight: 50;
+}
+.Sign-Up button{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.4em 1em;
+    font-weight: 700;
+    margin-left: auto;
+}
+.fa-bars{
+    font-size: 1.8rem;
+    color: black;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+#Toggle{
+    display: none;
+}
+/* ---------------------------------------- Main --------------------------------------------- */
+
+
+/* ---------- Menu-Section ---------- */
+#menu-section{
+    margin: 0 8vw;
+    margin-bottom: 5vh;
+}
+#menu-section h1{
+    padding-left: 1.2em;
+    margin: 1em 0;
+}
+.menu-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    gap: 5vw;
+    padding-bottom: 2em;
+}
+.menu-item img{
+    object-fit: cover;
+    border-radius: 50%;
+    width: 108px;
+    height: 108px;
+}
+
+.menu-item p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* ---------- Recommend-Section ---------- */
+.Recommend-itmes{
+    display: flex;
+    flex-direction: row;
+    gap: 4vw;
+    width: fit-content;
+}
+#recommend-section{
+    padding: 0vw 10vw;
+    background-color: #edebe9;
+    position: relative;
+    padding-bottom: 4em;
+}
+#recommend-section h1{
+    padding: 1em 0;
+}
+.recommend-item{
+    background-color: white;
+    width: 349.333px !important;
+    align-items: flex-start !important;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.24);
+    border: 1px solid rgb(209, 209, 209);
+}
+.item-details{
+    padding: 0 1em;
+    align-items: flex-start;
+}
+.item-details h4{
+    font-size: 14px;
+}
+.item-details h5{
+    font-size: 10px;
+}
+.item-price{
+    width: 100%;
+    padding: 0 1.9em 1.3em 1.5em;
+}
+.item-price h3{
+    font-size: 14px;
+}
+.item-price> .price-btn{
+    flex-grow: 1;
+    text-align: right;
+}
+.price-btn>button{
+    font-size: 12px;
+    font-weight: 900;
+    width: 96px;
+    height: 32px;
+    background-color: #00754a;
+    border-radius: 32px;
+    box-shadow: 0 4px 15px #a3a3a3ad;
+    color: white;
+    border: none;
+}
+.price-wrapper{
+    width: 100%;
+    justify-content:  flex-start;
+}
+.price-wrapper button{
+    margin-left: auto;
+    width: 200px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    font-size: 12px;
+    font-weight: 900;
+    background-color: white;
+    color: black;
+}
+.item-card {
+    padding: 1em 1.5em;
+    justify-content: flex-start;
+
+}
+.item-card>img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.swiper-left{
+    position: absolute !important;
+    left: 6% !important;
+    top: 50% !important;
+    cursor: pointer !important;
+    width: 80px !important;
+    height: 80px !important;
+}
+.swiper-right{
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    cursor: pointer !important;
+    width: 80px !important;
+    height: 80px !important;
+}
+.other{
+    position: absolute;
+    top: 1.5em;
+    right: 3em;
+    color: #00754a;
+    font-size: 0.8rem;
+    font-weight: bolder;
+}
+/* ---------- Other-Product-Section ---------- */
+
+#Other-Product-Section{
+    position: relative;
+}
+.background-color{
+    background-image: url(Resources/Rectangle_757_6e29d92bcf.png) !important;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10vh 10vw;
+    flex-wrap: wrap;
+    height: 220px;
+}
+.background-color-details{
+    gap: 3vw;
+}
+.background-color img{
+    width: 100px;
+}
+.price-wrapper{
+    margin-top: 15px;
+}
+.price-wrapper h4{
+    color: white;
+}
+.price-wrapper>button{
+    margin-top: 20px;
+}
+.other-product-wrapper h2{
+    font-size: 20px;
+    color: white;
+}
+.other-product-wrapper>p{
+    font-size: 14px;
+    color: white;
+}
+.p1{
+    font-size: 12px;
+    color: white;
+}
+.p2{
+    width: 90%;
+    margin-top: 1vh;
+}
+
+/* ---------- Learn-More-Section ---------- */
+.background-img{
+    position: relative;
+    z-index: 1;
+    background-image: url(Resources/20221212_PA_018_Coffee_Processing_Storytelling_FY_23_002_1_60fe335129.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+    border-radius: 10px;
+
+}
+.frontground-details{
+    position: absolute;
+    z-index: 10;
+    bottom: 30px;
+    left: 30px;
+}
+.frontground-details>h1,.frontground-details>p{
+    color: white;
+}
+
+#Learn-More-Section{
+    background-color: #edebe9;
+    margin: 10vh 0;
+}
+
+.black-blanket{
+    background-color: rgba(0, 0, 0, 0.411);
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.black-blanket:hover{
+    background-color: rgba(0, 0, 0, 0.712);
+}
+.Learn-More-Section{
+    margin: 0 10vw;
+    padding-bottom: 6vh;
+}
+.Learn-More-Section>h1{
+    padding: 5vh 0;
+}
+.background-img img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+.frontground-details h1{
+    margin-bottom: 0.3em;
+}
+.frontground-details p{
+    margin-bottom: 3em;
+    font-size: 13px;
+    width: 90%;
+}
+.frontground-details button{
+    padding: 0.3em 4.5em;
+    font-size: 0.78rem;
+    border-radius: 16px;
+    border: none;
+    font-weight: 400;
+}
+
+/* ---------- Footer-Section ---------- */
+
+.li-heading{
+    font-weight: 900;
+}
+#Footer-Section{
+    background-color: #0e382c;
+    /* color: #bbb; */
+    color: white;
+
+}
+.footer-items{
+    flex-wrap: wrap;
+    gap: 6vw;
+    align-items: flex-start;
+    margin-bottom: 3rem; ;
+    padding-top: 4em;
+}
+ul li{
+    list-style-type: none;
+}
+#App_Store{
+    margin-left: .7em;
+}
+.li-heading{
+    font-size: 1.125em;
+}
+.footer-items> ul>li:not(.li-heading){
+    font-size: 0.875em;
+    font-weight: 400;
+}
+.footer-items>ul> li{
+    margin-bottom: 1.5em;
+}
+.last-flex{
+    gap: 2em;
+    flex-wrap: wrap;
+}
+hr{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.last-flex li{
+    font-size: 12px;
+}
+.last-row{
+    flex-wrap: wrap;
+    width: 85%;
+    margin: auto;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+.last-row p{
+    flex-grow: 1;
+    text-align: right;
+    font-size: 0.6em;
+}
